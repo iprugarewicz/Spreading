@@ -60,7 +60,7 @@ while True:
                 if i[3] == True and ((elem[0] - i[0]) ** 2) + ((elem[1] - i[1]) ** 2) <= 5:
                     els[els.index(elem)][3] = True
         # coloring
-        if i[3] == True:
+        if i[3]:
             els[j][4] = (255, 0, 0)
 
         pygame.draw.circle(screen, i[4], (int(i[0]), int(i[1])), 2)
